@@ -1,0 +1,427 @@
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+  width: 100%;
+  height: 86px;
+
+  background: #f4f8fc;
+
+  border-bottom: 1px solid #dce5ec;
+
+  position: sticky;
+  top: 0;
+
+  z-index: 1000;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   NAVBAR CONTAINER
+========================================= */
+
+.navbar-container {
+  width: 87%;
+
+  max-width: 1600px;
+
+  height: 100%;
+
+  margin: 0 auto;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.navbar-logo {
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  text-decoration: none;
+
+  flex-shrink: 0;
+}
+
+
+/* =========================================
+   LOGO MARK
+========================================= */
+
+.logo-mark {
+  width: 34px;
+  height: 34px;
+
+  border: 2px solid #087bb5;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  color: #087bb5;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   LOGO TEXT
+========================================= */
+
+.logo-text {
+  color: #173b63;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.4px;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.navbar-menu {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 36px;
+
+  margin-left: auto;
+
+  margin-right: 60px;
+}
+
+
+/* =========================================
+   NAV LINKS
+========================================= */
+
+.nav-link {
+  position: relative;
+
+  color: #183b56;
+
+  text-decoration: none;
+
+  font-size: 16px;
+
+  font-weight: 400;
+
+  line-height: 1;
+
+  padding: 8px 0;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+/* =========================================
+   HOVER
+========================================= */
+
+.nav-link:hover {
+  color: #0ca7e8;
+
+  transform: translateY(-1px);
+}
+
+
+/* =========================================
+   ACTIVE
+========================================= */
+
+.nav-link.active {
+  color: #0ca7e8;
+}
+
+
+/* =========================================
+   ACTIVE UNDERLINE
+========================================= */
+
+.nav-link.active::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  right: 0;
+
+  bottom: -6px;
+
+  width: 100%;
+  height: 2px;
+
+  margin: auto;
+
+  background: #0ca7e8;
+
+  border-radius: 5px;
+}
+
+
+/* =========================================
+   GET STARTED BUTTON
+========================================= */
+
+.navbar-button {
+  min-width: 158px;
+
+  height: 50px;
+
+  padding: 0 25px;
+
+  background: #0ca7e8;
+
+  color: #ffffff;
+
+  border-radius: 28px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+
+  box-sizing: border-box;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+/* =========================================
+   BUTTON HOVER
+========================================= */
+
+.navbar-button:hover {
+  background: #078fc9;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 22px rgba(12, 167, 232, 0.25);
+}
+
+
+/* =========================================
+   LARGE SCREEN
+========================================= */
+
+@media (max-width: 1400px) {
+
+  .navbar-container {
+    width: 90%;
+  }
+
+  .navbar-menu {
+    gap: 28px;
+
+    margin-right: 35px;
+  }
+
+  .nav-link {
+    font-size: 15px;
+  }
+
+  .navbar-button {
+    min-width: 145px;
+
+    height: 46px;
+
+    font-size: 15px;
+  }
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1050px) {
+
+  .navbar {
+    height: 78px;
+  }
+
+  .navbar-container {
+    width: 92%;
+  }
+
+  .navbar-menu {
+    gap: 20px;
+
+    margin-right: 20px;
+  }
+
+  .nav-link {
+    font-size: 14px;
+  }
+
+  .navbar-button {
+    min-width: 125px;
+
+    height: 43px;
+
+    padding: 0 18px;
+
+    font-size: 14px;
+  }
+
+  .logo-text {
+    font-size: 10px;
+  }
+
+  .logo-mark {
+    width: 30px;
+    height: 30px;
+
+    font-size: 13px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 800px) {
+
+  .navbar {
+    height: auto;
+
+    min-height: 75px;
+  }
+
+  .navbar-container {
+    width: 92%;
+
+    min-height: 75px;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    padding: 12px 0;
+  }
+
+  .navbar-logo {
+    margin-right: auto;
+  }
+
+  .navbar-menu {
+    order: 3;
+
+    width: 100%;
+
+    margin: 0;
+
+    padding: 8px 0 5px;
+
+    gap: 22px;
+
+    overflow-x: auto;
+
+    justify-content: flex-start;
+
+    scrollbar-width: none;
+  }
+
+  .navbar-menu::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-link {
+    font-size: 14px;
+
+    flex-shrink: 0;
+  }
+
+  .navbar-button {
+    min-width: 120px;
+
+    height: 42px;
+
+    font-size: 14px;
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 500px) {
+
+  .navbar-container {
+    width: 90%;
+  }
+
+  .logo-text {
+    font-size: 9px;
+  }
+
+  .logo-mark {
+    width: 29px;
+    height: 29px;
+
+    font-size: 12px;
+  }
+
+  .navbar-button {
+    display: none;
+  }
+
+  .navbar-menu {
+    gap: 20px;
+  }
+
+  .nav-link {
+    font-size: 13px;
+  }
+
+}

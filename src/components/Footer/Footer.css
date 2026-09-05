@@ -1,0 +1,322 @@
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+  width: 100%;
+
+  background: #c6eaf9;
+
+  padding: 75px 0 25px;
+
+  box-sizing: border-box;
+
+}
+
+
+/* =========================================
+   FOOTER CONTAINER
+========================================= */
+
+.footer-container {
+  width: 87%;
+
+  max-width: 1600px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    1.5fr
+    1fr
+    1fr
+    1.4fr;
+
+  gap: 70px;
+}
+
+
+/* =========================================
+   BRAND
+========================================= */
+
+.footer-brand h2 {
+  margin: 0 0 20px;
+
+  color: #102a43;
+
+  font-size: 28px;
+
+  line-height: 1.1;
+
+  font-weight: 700;
+}
+
+.footer-brand p {
+  max-width: 330px;
+
+  margin: 0;
+
+  color: #627d98;
+
+  font-size: 15px;
+
+  line-height: 1.75;
+}
+
+
+/* =========================================
+   FOOTER COLUMN
+========================================= */
+
+.footer-column {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  gap: 14px;
+}
+
+
+/* =========================================
+   COLUMN TITLE
+========================================= */
+
+.footer-column h3 {
+  position: relative;
+
+  margin: 0 0 10px;
+
+  color: #102a43;
+
+  font-size: 17px;
+
+  font-weight: 600;
+}
+
+.footer-column h3::after {
+  content: "";
+
+  display: block;
+
+  width: 35px;
+
+  height: 2px;
+
+  margin-top: 9px;
+
+  background: #0ca7e8;
+
+  border-radius: 5px;
+}
+
+
+/* =========================================
+   LINKS
+========================================= */
+
+.footer-column a {
+  color: #627d98;
+
+  font-size: 14px;
+
+  text-decoration: none;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.footer-column a:hover {
+  color: #0ca7e8;
+
+  transform: translateX(4px);
+}
+
+
+/* =========================================
+   COLUMN DESCRIPTION
+========================================= */
+
+.footer-column p {
+  max-width: 280px;
+
+  margin: 0;
+
+  color: #627d98;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   NEWSLETTER
+========================================= */
+
+.footer-subscribe {
+  width: 100%;
+
+  max-width: 300px;
+
+  height: 48px;
+
+  display: flex;
+
+  align-items: stretch;
+
+  border: 1px solid #d8e3ea;
+
+  border-radius: 7px;
+
+  overflow: hidden;
+
+  background: #ffffff;
+}
+
+.footer-subscribe input {
+  flex: 1;
+
+  min-width: 0;
+
+  padding: 0 14px;
+
+  border: none;
+
+  outline: none;
+
+  color: #102a43;
+
+  font-size: 14px;
+
+  background: #ffffff;
+}
+
+.footer-subscribe input::placeholder {
+  color: #9aaabd;
+}
+
+.footer-subscribe button {
+  width: 48px;
+
+  border: none;
+
+  background: #0ca7e8;
+
+  color: #ffffff;
+
+  font-size: 20px;
+
+  cursor: pointer;
+
+  transition: background 0.3s ease;
+}
+
+.footer-subscribe button:hover {
+  background: #078fc9;
+}
+
+
+/* =========================================
+   FOOTER BOTTOM
+========================================= */
+
+.footer-bottom {
+  width: 87%;
+
+  max-width: 1600px;
+
+  margin: 55px auto 0;
+
+  padding-top: 22px;
+
+  border-top: 1px solid #dfe7ed;
+
+  color: #71869a;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .footer {
+    padding: 60px 0 25px;
+  }
+
+  .footer-container {
+    width: 90%;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 45px;
+  }
+
+  .footer-bottom {
+    width: 90%;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .footer {
+    padding: 50px 0 20px;
+  }
+
+  .footer-container {
+    width: 90%;
+
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+  }
+
+  .footer-brand h2 {
+    font-size: 25px;
+  }
+
+  .footer-brand p {
+    font-size: 14px;
+  }
+
+  .footer-column h3 {
+    font-size: 16px;
+  }
+
+  .footer-column a {
+    font-size: 14px;
+  }
+
+  .footer-column p {
+    font-size: 14px;
+  }
+
+  .footer-subscribe {
+    max-width: 100%;
+  }
+
+  .footer-bottom {
+    width: 90%;
+
+    margin-top: 40px;
+
+    font-size: 12px;
+  }
+
+}

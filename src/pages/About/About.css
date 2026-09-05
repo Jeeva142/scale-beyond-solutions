@@ -1,0 +1,834 @@
+/* =========================================
+   ABOUT PAGE
+========================================= */
+
+.about-page {
+  width: 100%;
+  overflow: hidden;
+}
+
+.about-container {
+  width: 87%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.section-label {
+  display: inline-block;
+
+  color: #0ca7e8;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+
+/* =========================================
+   1. WHO WE ARE
+========================================= */
+
+.who-we-are {
+  padding: 100px 0;
+
+  background: #ffffff;
+}
+
+.who-we-are .about-container {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  align-items: center;
+
+  gap: 80px;
+}
+
+.who-content h1 {
+  margin: 18px 0 22px;
+
+  color: #17283f;
+
+  font-size: 45px;
+  line-height: 1.2;
+}
+
+.who-content p {
+  max-width: 650px;
+
+  margin-bottom: 18px;
+
+  color: #627d98;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================
+   WHO VISUAL
+========================================= */
+
+.who-visual {
+  position: relative;
+
+  min-height: 430px;
+}
+
+.who-main-box {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 75%;
+  height: 330px;
+
+  padding: 35px;
+
+  box-sizing: border-box;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: flex-end;
+
+  border-radius: 20px;
+
+  background: #e2f4fb;
+}
+
+.who-main-box span,
+.who-small-box span {
+  color: #0ca7e8;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.who-main-box h3 {
+  margin: 12px 0 0;
+
+  color: #17324d;
+
+  font-size: 29px;
+
+  line-height: 1.2;
+}
+
+.who-small-box {
+  position: absolute;
+
+  right: 0;
+  bottom: 0;
+
+  width: 58%;
+  height: 220px;
+
+  padding: 30px;
+
+  box-sizing: border-box;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: flex-end;
+
+  border: 8px solid white;
+
+  border-radius: 20px;
+
+  background: #0ca7e8;
+}
+
+.who-small-box span {
+  color: white;
+}
+
+.who-small-box h3 {
+  margin: 10px 0 0;
+
+  color: white;
+
+  font-size: 24px;
+
+  line-height: 1.2;
+}
+
+
+/* =========================================
+   SECTION HEADING
+========================================= */
+
+.section-heading {
+  max-width: 700px;
+
+  margin: 0 auto 55px;
+
+  text-align: center;
+}
+
+.section-heading h2 {
+  margin: 15px 0;
+
+  color: #17283f;
+
+  font-size: 42px;
+
+  line-height: 1.2;
+}
+
+.section-heading p {
+  margin: 0;
+
+  color: #627d98;
+
+  font-size: 16px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   2. VISION & MISSION
+========================================= */
+
+.vision-mission {
+  padding: 100px 0;
+
+  background: #f3f8fc;
+}
+
+.vision-mission-grid {
+  width: 87%;
+  max-width: 1200px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 25px;
+}
+
+
+/* =========================================
+   VISION / MISSION CARDS
+========================================= */
+
+.vision-card,
+.mission-card {
+  position: relative;
+
+  min-height: 390px;
+
+  padding: 38px;
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+
+  border-radius: 20px;
+
+  transition: 0.35s ease;
+}
+
+.vision-card {
+  background: #ffffff;
+
+  border: 1px solid #dcecf4;
+}
+
+.mission-card {
+  background: #0ca7e8;
+}
+
+.vision-card:hover,
+.mission-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 20px 45px rgba(30, 70, 100, 0.14);
+}
+
+
+/* =========================================
+   CARD TOP
+========================================= */
+
+.card-top {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-top > span {
+  font-size: 13px;
+
+  font-weight: 700;
+
+  opacity: 0.5;
+}
+
+.vision-card .card-top > span {
+  color: #17283f;
+}
+
+.mission-card .card-top > span {
+  color: white;
+}
+
+.card-icon {
+  width: 62px;
+  height: 62px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 15px;
+
+  font-size: 27px;
+}
+
+.vision-card .card-icon {
+  background: #dff3fc;
+}
+
+.mission-card .card-icon {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.card-content {
+  margin-top: 45px;
+}
+
+.card-label {
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+.vision-card .card-label {
+  color: #0ca7e8;
+}
+
+.mission-card .card-label {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.card-content h3 {
+  max-width: 480px;
+
+  margin: 14px 0 18px;
+
+  font-size: 28px;
+
+  line-height: 1.25;
+}
+
+.vision-card .card-content h3 {
+  color: #17283f;
+}
+
+.mission-card .card-content h3 {
+  color: white;
+}
+
+.card-content p {
+  max-width: 500px;
+
+  margin: 0;
+
+  font-size: 15px;
+
+  line-height: 1.8;
+}
+
+.vision-card .card-content p {
+  color: #627d98;
+}
+
+.mission-card .card-content p {
+  color: rgba(255, 255, 255, 0.86);
+}
+
+
+/* =========================================
+   CARD LINE
+========================================= */
+
+.card-line {
+  position: absolute;
+
+  left: 38px;
+  right: 38px;
+  bottom: 28px;
+
+  height: 2px;
+
+  border-radius: 10px;
+}
+
+.vision-card .card-line {
+  background: #dff3fc;
+}
+
+.mission-card .card-line {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+
+/* =========================================
+   3. CORE VALUES
+========================================= */
+
+.core-values {
+  padding: 100px 0;
+
+  background: #ffffff;
+}
+
+.values-grid {
+  width: 87%;
+  max-width: 1300px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 20px;
+}
+
+.value-card {
+  position: relative;
+
+  min-height: 280px;
+
+  padding: 30px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #e0e9ef;
+
+  border-radius: 16px;
+
+  background: white;
+
+  transition: 0.35s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-8px);
+
+  border-color: #a9dff3;
+
+  box-shadow:
+    0 15px 35px rgba(30, 70, 100, 0.1);
+}
+
+.value-number {
+  position: absolute;
+
+  top: 20px;
+  right: 20px;
+
+  color: #dcecf4;
+
+  font-size: 30px;
+
+  font-weight: 700;
+}
+
+.value-icon {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 25px;
+
+  border-radius: 12px;
+
+  background: #dff3fc;
+
+  color: #0ca7e8;
+
+  font-size: 20px;
+}
+
+.value-card h3 {
+  margin: 0 0 12px;
+
+  color: #17283f;
+
+  font-size: 20px;
+}
+
+.value-card p {
+  margin: 0;
+
+  color: #627d98;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+.value-arrow {
+  position: absolute;
+
+  right: 28px;
+  bottom: 25px;
+
+  color: #0ca7e8;
+
+  font-size: 18px;
+}
+
+
+/* =========================================
+   4. STATISTICS
+========================================= */
+
+.about-statistics {
+  padding: 55px 0;
+
+  background: #0ca7e8;
+}
+
+.statistics-container {
+  width: 87%;
+  max-width: 1300px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+}
+
+.stat-item {
+  text-align: center;
+
+  border-right:
+    1px solid rgba(255, 255, 255, 0.25);
+}
+
+.stat-item:last-child {
+  border-right: none;
+}
+
+.stat-item strong {
+  display: block;
+
+  color: white;
+
+  font-size: 40px;
+
+  line-height: 1.2;
+}
+
+.stat-item span {
+  color: rgba(255, 255, 255, 0.8);
+
+  font-size: 13px;
+
+  font-weight: 600;
+}
+
+
+/* =========================================
+   5. WHY SCALE BEYOND
+========================================= */
+
+.why-scale {
+  padding: 100px 0;
+
+  background: #f3f8fc;
+}
+
+.why-grid {
+  width: 87%;
+  max-width: 1200px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 18px;
+}
+
+.why-card {
+  display: grid;
+
+  grid-template-columns: 55px 1fr 30px;
+
+  align-items: center;
+
+  gap: 18px;
+
+  min-height: 145px;
+
+  padding: 25px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #dfebf2;
+
+  border-radius: 15px;
+
+  background: white;
+
+  transition: 0.35s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-6px);
+
+  border-color: #a9dff3;
+
+  box-shadow:
+    0 15px 35px rgba(30, 70, 100, 0.1);
+}
+
+.why-number {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: #dff3fc;
+
+  color: #0ca7e8;
+
+  font-size: 13px;
+
+  font-weight: 700;
+}
+
+.why-card-content h3 {
+  margin: 0 0 7px;
+
+  color: #17283f;
+
+  font-size: 18px;
+}
+
+.why-card-content p {
+  margin: 0;
+
+  color: #627d98;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+.why-arrow {
+  color: #0ca7e8;
+
+  font-size: 20px;
+
+  transition: 0.3s ease;
+}
+
+.why-card:hover .why-arrow {
+  transform: translateX(5px);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1050px) {
+
+  .who-we-are .about-container {
+    gap: 45px;
+  }
+
+  .who-content h1 {
+    font-size: 38px;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 800px) {
+
+  .who-we-are,
+  .vision-mission,
+  .core-values,
+  .why-scale {
+    padding: 75px 0;
+  }
+
+  .who-we-are .about-container {
+    grid-template-columns: 1fr;
+  }
+
+  .who-content h1 {
+    font-size: 36px;
+  }
+
+  .who-visual {
+    min-height: 380px;
+  }
+
+  .vision-mission-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .statistics-container {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 30px;
+  }
+
+  .stat-item:nth-child(2) {
+    border-right: none;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 500px) {
+
+  .who-we-are,
+  .vision-mission,
+  .core-values,
+  .why-scale {
+    padding: 60px 0;
+  }
+
+  .about-container,
+  .vision-mission-grid,
+  .values-grid,
+  .why-grid {
+    width: 90%;
+  }
+
+  .who-content h1 {
+    font-size: 32px;
+  }
+
+  .who-content p {
+    font-size: 15px;
+  }
+
+  .who-visual {
+    min-height: 320px;
+  }
+
+  .who-main-box {
+    width: 80%;
+    height: 250px;
+  }
+
+  .who-small-box {
+    width: 60%;
+    height: 170px;
+  }
+
+  .section-heading h2 {
+    font-size: 32px;
+  }
+
+  .section-heading p {
+    font-size: 14px;
+  }
+
+  .vision-card,
+  .mission-card {
+    min-height: 410px;
+
+    padding: 28px;
+  }
+
+  .card-content h3 {
+    font-size: 24px;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .statistics-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .stat-item strong {
+    font-size: 30px;
+  }
+
+  .stat-item span {
+    font-size: 11px;
+  }
+
+  .why-card {
+    grid-template-columns: 45px 1fr 20px;
+
+    padding: 20px;
+
+    gap: 12px;
+  }
+
+  .why-number {
+    width: 42px;
+    height: 42px;
+  }
+
+  .why-card-content h3 {
+    font-size: 16px;
+  }
+
+}

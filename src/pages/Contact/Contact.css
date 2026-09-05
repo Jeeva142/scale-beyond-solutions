@@ -1,0 +1,567 @@
+/* =========================================
+   CONTACT PREVIEW SECTION
+========================================= */
+
+.contact-preview {
+  width: 100%;
+  padding: 90px 7%;
+  box-sizing: border-box;
+
+  background: #f1f6fa;
+}
+
+.contact-preview-container {
+  max-width: 1250px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 60px;
+
+  align-items: stretch;
+}
+
+
+/* =========================================
+   LEFT CONTENT
+========================================= */
+
+.contact-preview-info {
+  padding: 35px 0;
+}
+
+.contact-preview-label {
+  display: inline-block;
+
+  margin-bottom: 15px;
+
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+
+  color: #12a5e3;
+}
+
+.contact-preview-info h2 {
+  margin: 0 0 20px;
+
+  font-size: 42px;
+  line-height: 1.2;
+  font-weight: 700;
+
+  color: #17233b;
+}
+
+.contact-preview-info h2 span {
+  display: inline;
+
+  color: #12a5e3;
+}
+
+.contact-preview-info > p {
+  max-width: 520px;
+
+  margin: 0 0 35px;
+
+  font-size: 16px;
+  line-height: 1.7;
+
+  color: #68798d;
+}
+
+
+/* =========================================
+   CONTACT INFORMATION
+========================================= */
+
+.contact-preview-item {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  margin-bottom: 23px;
+}
+
+.contact-preview-icon {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 12px;
+
+  background: #dff3fc;
+
+  color: #12a5e3;
+
+  font-size: 20px;
+
+  transition: all 0.3s ease;
+}
+
+.contact-preview-item:hover .contact-preview-icon {
+  background: #12a5e3;
+
+  color: #ffffff;
+
+  transform: translateY(-3px);
+}
+
+.contact-preview-item div:last-child span {
+  display: block;
+
+  margin-bottom: 4px;
+
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  color: #7b8c9d;
+}
+
+.contact-preview-item div:last-child p {
+  margin: 0;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  color: #17233b;
+}
+
+
+/* =========================================
+   STATS
+========================================= */
+
+.contact-preview-stats {
+  display: flex;
+
+  align-items: center;
+
+  gap: 38px;
+
+  margin-top: 35px;
+  padding-top: 28px;
+
+  border-top: 1px solid #dbe6ed;
+}
+
+.contact-preview-stats div {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.contact-preview-stats strong {
+  font-size: 25px;
+  font-weight: 700;
+
+  color: #12a5e3;
+}
+
+.contact-preview-stats span {
+  font-size: 12px;
+
+  color: #7a8b9d;
+}
+
+
+/* =========================================
+   RIGHT FORM
+========================================= */
+
+.contact-preview-form-wrapper {
+  padding: 38px;
+
+  box-sizing: border-box;
+
+  background: #ffffff;
+
+  border: 1px solid #e2ebf1;
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 15px 45px rgba(23, 35, 59, 0.08);
+}
+
+
+/* =========================================
+   FORM HEADER
+========================================= */
+
+.contact-preview-form-header {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  margin-bottom: 28px;
+}
+
+.contact-form-icon {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 12px;
+
+  background: #12a5e3;
+
+  color: #ffffff;
+
+  font-size: 20px;
+}
+
+.contact-preview-form-header h3 {
+  margin: 0 0 5px;
+
+  font-size: 22px;
+  font-weight: 700;
+
+  color: #17233b;
+}
+
+.contact-preview-form-header p {
+  margin: 0;
+
+  font-size: 13px;
+  line-height: 1.5;
+
+  color: #7a8b9d;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.contact-preview-form {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 18px;
+}
+
+.contact-form-row {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 18px;
+}
+
+.contact-form-group {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.contact-form-group label {
+  font-size: 13px;
+  font-weight: 600;
+
+  color: #17233b;
+}
+
+.contact-form-group input,
+.contact-form-group textarea {
+  width: 100%;
+
+  padding: 13px 14px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #dce6ec;
+
+  border-radius: 9px;
+
+  outline: none;
+
+  background: #fafcfd;
+
+  color: #17233b;
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+}
+
+.contact-form-group input {
+  height: 46px;
+}
+
+.contact-form-group textarea {
+  min-height: 120px;
+
+  resize: vertical;
+}
+
+.contact-form-group input:focus,
+.contact-form-group textarea:focus {
+  border-color: #12a5e3;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 0 0 3px rgba(18, 165, 227, 0.10);
+}
+
+.contact-form-group input::placeholder,
+.contact-form-group textarea::placeholder {
+  color: #a2afba;
+}
+
+
+/* =========================================
+   SUBMIT BUTTON
+========================================= */
+
+.contact-preview-form button {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  padding: 14px 20px;
+
+  border: none;
+
+  border-radius: 9px;
+
+  background: #12a5e3;
+
+  color: #ffffff;
+
+  font-family: inherit;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.contact-preview-form button:hover {
+  background: #078fca;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 20px rgba(18, 165, 227, 0.25);
+}
+
+.contact-preview-form button span {
+  font-size: 18px;
+
+  transition: transform 0.3s ease;
+}
+
+.contact-preview-form button:hover span {
+  transform: translateX(4px);
+}
+
+
+/* =========================================
+   SECURITY TEXT
+========================================= */
+
+.contact-preview-form small {
+  display: block;
+
+  text-align: center;
+
+  font-size: 11px;
+
+  color: #8997a4;
+}
+
+
+/* =========================================
+   VIEW CONTACT PAGE BUTTON
+========================================= */
+
+.contact-preview-button {
+  display: flex;
+
+  justify-content: center;
+
+  margin-top: 45px;
+}
+
+.contact-preview-button a {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  padding: 14px 28px;
+
+  border-radius: 30px;
+
+  background: #17233b;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.contact-preview-button a:hover {
+  background: #12a5e3;
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 10px 25px rgba(18, 165, 227, 0.20);
+}
+
+.contact-preview-button a span {
+  font-size: 18px;
+
+  transition: transform 0.3s ease;
+}
+
+.contact-preview-button a:hover span {
+  transform: translateX(4px);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .contact-preview {
+    padding: 75px 6%;
+  }
+
+  .contact-preview-container {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+  }
+
+  .contact-preview-info {
+    padding: 0;
+  }
+
+  .contact-preview-info > p {
+    max-width: 700px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+  .contact-preview {
+    padding: 60px 5%;
+  }
+
+  .contact-preview-info h2 {
+    font-size: 32px;
+  }
+
+  .contact-preview-info > p {
+    font-size: 15px;
+  }
+
+  .contact-preview-form-wrapper {
+    padding: 25px 20px;
+
+    border-radius: 16px;
+  }
+
+  .contact-preview-form-header h3 {
+    font-size: 19px;
+  }
+
+  .contact-form-row {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+  .contact-preview-stats {
+    gap: 20px;
+
+    justify-content: space-between;
+  }
+
+  .contact-preview-stats strong {
+    font-size: 21px;
+  }
+
+  .contact-preview-stats span {
+    font-size: 11px;
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+  .contact-preview-stats {
+    gap: 12px;
+  }
+
+  .contact-preview-stats strong {
+    font-size: 19px;
+  }
+
+  .contact-preview-stats span {
+    font-size: 10px;
+  }
+
+}

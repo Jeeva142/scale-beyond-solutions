@@ -1,0 +1,321 @@
+/* =========================================
+   SERVICES PREVIEW
+========================================= */
+
+.services-preview {
+  width: 100%;
+  padding: 90px 7%;
+  box-sizing: border-box;
+
+  background: #f1f6fa;
+}
+
+.services-preview-container {
+  max-width: 1250px;
+  margin: auto;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.services-preview-header {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto 50px;
+}
+
+.services-preview-label {
+  display: inline-block;
+
+  margin-bottom: 14px;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+
+  color: #12a5e3;
+}
+
+.services-preview-header h2 {
+  margin: 0 0 18px;
+
+  font-size: 40px;
+  line-height: 1.2;
+
+  color: #17233b;
+}
+
+.services-preview-header h2 span {
+  color: #159ed4;
+}
+
+.services-preview-header p {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 1.7;
+
+  color: #68798d;
+}
+
+
+/* =========================================
+   GRID
+========================================= */
+
+.services-preview-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 24px;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.services-preview-card {
+  position: relative;
+
+  min-height: 270px;
+
+  padding: 32px;
+
+  box-sizing: border-box;
+
+  background: #ffffff;
+
+  border-radius: 16px;
+
+  border: 1px solid #e4edf3;
+
+  overflow: hidden;
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    background 0.35s ease;
+}
+
+
+/* =========================================
+   CARD HOVER
+========================================= */
+
+.services-preview-card:hover {
+  transform: translateY(-10px);
+
+  background: #12a5e3;
+
+  border-color: #12a5e3;
+
+  box-shadow: 0 18px 40px rgba(18, 165, 227, 0.2);
+}
+
+.services-preview-card:hover h3,
+.services-preview-card:hover p,
+.services-preview-card:hover .services-preview-link {
+  color: #ffffff;
+}
+
+
+/* =========================================
+   NUMBER
+========================================= */
+
+.services-preview-number {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 48px;
+  height: 48px;
+
+  margin-bottom: 25px;
+
+  border-radius: 12px;
+
+  background: #e2f4fc;
+
+  color: #12a5e3;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  transition: all 0.35s ease;
+}
+
+.services-preview-card:hover .services-preview-number {
+  background: rgba(255, 255, 255, 0.2);
+
+  color: #ffffff;
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.services-preview-card h3 {
+  margin: 0 0 13px;
+
+  font-size: 21px;
+  line-height: 1.3;
+
+  color: #17233b;
+
+  transition: color 0.35s ease;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.services-preview-card p {
+  margin: 0 0 25px;
+
+  font-size: 15px;
+  line-height: 1.65;
+
+  color: #66778b;
+
+  transition: color 0.35s ease;
+}
+
+
+/* =========================================
+   LINK
+========================================= */
+
+.services-preview-link {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 8px;
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  color: #12a5e3;
+
+  transition: color 0.35s ease;
+}
+
+.services-preview-link span {
+  font-size: 18px;
+
+  transition: transform 0.3s ease;
+}
+
+.services-preview-link:hover span {
+  transform: translateX(5px);
+}
+
+
+/* =========================================
+   VIEW ALL BUTTON
+========================================= */
+
+.services-preview-button {
+  display: flex;
+
+  justify-content: center;
+
+  margin-top: 45px;
+}
+
+.services-preview-button a {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 15px 28px;
+
+  border-radius: 30px;
+
+  background: #12a5e3;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.services-preview-button a:hover {
+  background: #078fca;
+
+  transform: translateY(-3px);
+
+  box-shadow: 0 10px 25px rgba(18, 165, 227, 0.25);
+}
+
+.services-preview-button span {
+  font-size: 19px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .services-preview {
+    padding: 75px 6%;
+  }
+
+  .services-preview-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+  .services-preview {
+    padding: 60px 5%;
+  }
+
+  .services-preview-header {
+    margin-bottom: 35px;
+  }
+
+  .services-preview-header h2 {
+    font-size: 32px;
+  }
+
+  .services-preview-header p {
+    font-size: 15px;
+  }
+
+  .services-preview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-preview-card {
+    min-height: auto;
+
+    padding: 28px;
+  }
+
+}

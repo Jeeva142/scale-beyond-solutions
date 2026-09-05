@@ -1,0 +1,60 @@
+/* =========================================
+   COMMON REVEAL
+========================================= */
+
+.reveal {
+  opacity: 0;
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+  transition-delay: var(--reveal-delay);
+  will-change: opacity, transform;
+}
+
+
+/* =========================================
+   DIRECTIONS
+========================================= */
+
+.reveal-up {
+  transform: translateY(45px);
+}
+
+.reveal-down {
+  transform: translateY(-45px);
+}
+
+.reveal-left {
+  transform: translateX(-45px);
+}
+
+.reveal-right {
+  transform: translateX(45px);
+}
+
+.reveal-fade {
+  transform: scale(0.96);
+}
+
+
+/* =========================================
+   SHOW
+========================================= */
+
+.reveal-show {
+  opacity: 1;
+  transform: translate(0, 0) scale(1);
+}
+
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
