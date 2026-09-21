@@ -1,13 +1,10 @@
 import { Link } from "react-router-dom";
 import "./Home.css";
 import Products from "../Product/Product";
-// import Testimonials from "../../components/Testimonials/Testimonials";
-// import Team from "../../components/Team/Team";
-// import Pricing from "../../components/Pricing/Pricing";
 import Services from "../Services/Services";
 import ContactSection from "../Contact/Contact";
 import Reveal from "../../components/Reveal/Reveal";
-
+import image from "../../assets/image/image.png"
 function Home() {
 
   const stats = [
@@ -118,30 +115,7 @@ function Home() {
             </div>
 
             <div className="hero-visual">
-
-              <div className="hero-circle hero-circle-one"></div>
-
-              <div className="hero-circle hero-circle-two"></div>
-
-              <div className="hero-main-card">
-
-                <span>BUILD</span>
-
-                <strong>
-                  CREATE
-                </strong>
-
-                <span>
-                  GROW
-                </span>
-
-                <div className="hero-card-line"></div>
-
-                <small>
-                  SCALE BEYOND SOLUTIONS
-                </small>
-
-              </div>
+            <img src={image} style={{width:"700px"}}></img>
 
               <div className="hero-floating-card">
 

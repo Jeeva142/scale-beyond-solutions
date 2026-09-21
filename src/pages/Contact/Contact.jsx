@@ -68,29 +68,29 @@ function ContactSection() {
     📍
   </div>
 
-  <div>
+  <div className="contact-vm">
     <span>VISIT US</span>
 
-    <p style={{paddingBottom:"10px"}}>
-      <strong style={{color:"blue"}}>Corporate Office:</strong>
+    <p>
+      <strong>Corporate Office:</strong>
       <br />
-        <p style={{paddingLeft:"15px"}}>No 46, Opp to Gani Hotel, Hosur</p>
+      No 46, Opp to Gani Hotel, Hosur
     </p>
-<strong style={{color:"blue"}}>Branch Office:</strong>
+<br />
+    <p>
+      <strong>Branch Office:</strong>
       <br />
-    <p style={{paddingLeft:"15px"}}>
-      
-      Old LIC Backside, Near Balaji Hospital, Palacode.
+      Old LIC Backside, Near Balaji Hospital, Palacode
     </p>
 
-    <p style={{paddingLeft:"15px"}}>
+    <p>
       
-      Nethaji Byepass Road, Near Adhiyaman Palace, Dharmapuri.
+      Nethaji Byepass Road, Near Adhiyaman Palace, Dharmapuri
     </p>
 
-    <p style={{paddingLeft:"15px"}}>
+    <p>
       
-      Salem Byepass Road, Near TCR Hospital, Krishnagiri.
+      Salem Byepass Road, Near TCR Hospital, Krishnagiri
     </p>
 
   </div>
@@ -223,7 +223,14 @@ function ContactSection() {
 
       {/* FULL CONTACT PAGE LINK */}
 
-      
+      <div className="contact-preview-button">
+
+        <Link to="/contact">
+          View Contact Page
+          <span>→</span>
+        </Link>
+
+      </div>
 
     </section>
     </Reveal>

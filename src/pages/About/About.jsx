@@ -1,5 +1,6 @@
 import "./About.css";
 import Reveal from "../../components/Reveal/Reveal";
+import image from "../../assets/image/image1.png"
 function About() {
   const values = [
     {
@@ -71,26 +72,7 @@ function About() {
 
           <div className="who-visual">
 
-            <div className="who-main-box">
-              <span>01</span>
-
-              <h3>
-                DIGITAL
-                <br />
-                TRANSFORMATION
-              </h3>
-            </div>
-
-            <div className="who-small-box">
-              <span>02</span>
-
-              <h3>
-                BUSINESS
-                <br />
-                GROWTH
-              </h3>
-            </div>
-
+            <img src={image} style={{width:"600px"}}></img>
           </div>
 
         </div>
