@@ -1,5 +1,4 @@
-import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
@@ -15,7 +14,6 @@ import Contact from "./pages/Contact/Contact";
 
 function App() {
   return (
-    <BrowserRouter>
 
       <Navbar />
 
@@ -40,8 +38,6 @@ function App() {
       </Routes>
 
       <Footer />
-
-    </BrowserRouter>
   );
 }
 
