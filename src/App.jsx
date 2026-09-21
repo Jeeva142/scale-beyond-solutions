@@ -14,30 +14,22 @@ import Contact from "./pages/Contact/Contact";
 
 function App() {
   return (
-
+    <>
       <Navbar />
 
       <Routes>
-
         <Route path="/" element={<Home />} />
-
         <Route path="/about" element={<About />} />
-
         <Route path="/services" element={<Services />} />
-
         <Route path="/product" element={<Product />} />
-
         <Route path="/price" element={<Price />} />
-
         <Route path="/team" element={<Team />} />
-
         <Route path="/career" element={<Career />} />
-
         <Route path="/contact" element={<Contact />} />
-
       </Routes>
 
       <Footer />
+    </>
   );
 }
 
