@@ -475,7 +475,7 @@ function Home() {
         <div className="team-preview-card">
 
           <div className="team-preview-image">
-            <span>PHOTO</span>
+            <span>`${import.meta.env.BASE_URL}products/ai-assistant.png`</span>
           </div>
 
           <h3>Pradeep Kumar</h3>
