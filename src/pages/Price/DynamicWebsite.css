@@ -19,11 +19,7 @@
 .dynamic-hero {
   padding: 85px 20px 75px;
 
-  background:
-    linear-gradient(
-      rgba(23, 42, 70, 0.92),
-      rgba(14, 165, 233, 0.82)
-    );
+ background: #e8f7fc;
 
   text-align: center;
 }
@@ -39,7 +35,7 @@
 
   margin-bottom: 15px;
 
-  color: #dff4fc;
+  color: #01a3ed;
 
   font-size: 14px;
   font-weight: 700;
@@ -50,7 +46,7 @@
 .dynamic-hero h1 {
   margin: 0;
 
-  color: #ffffff;
+  color: black;
 
   font-size: 52px;
   font-weight: 700;
@@ -59,7 +55,7 @@
 }
 
 .dynamic-hero h1 span {
-  color: #7dd3fc;
+  color: #059de3;
 }
 
 .dynamic-hero p {
@@ -67,7 +63,7 @@
 
   margin: 20px auto 0;
 
-  color: #e5f7fc;
+  color: #676c6f;
 
   font-size: 16px;
 

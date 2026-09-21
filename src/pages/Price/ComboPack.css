@@ -1,0 +1,283 @@
+.combo-page {
+  background: #ffffff;
+  min-height: 100vh;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.combo-hero {
+  padding: 100px 5%;
+
+  background: #e8f7fc;
+
+  text-align: center;
+}
+
+.combo-hero-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+.combo-label {
+  display: inline-block;
+
+  margin-bottom: 15px;
+
+  color: #01a3ed;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.combo-hero h1 {
+  margin: 0 0 20px;
+
+  color: black;
+
+  font-size: 52px;
+  line-height: 1.2;
+}
+
+.combo-hero h1 span {
+  color: #059de3;
+}
+
+.combo-hero p {
+  max-width: 650px;
+
+  margin: auto;
+
+  color: #676c6f;
+
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* =========================
+   PRICING SECTION
+========================= */
+
+.combo-pricing-section {
+  padding: 70px 3% 100px;
+
+  background: #ffffff;
+}
+
+.combo-pricing-container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.combo-table-wrapper {
+  width: 100%;
+
+  overflow-x: auto;
+
+  border-radius: 10px;
+
+  box-shadow:
+    0 10px 35px rgba(14, 165, 233, 0.10);
+}
+
+/* =========================
+   TABLE
+========================= */
+
+.combo-table {
+  width: 100%;
+
+  min-width: 950px;
+
+  border-collapse: collapse;
+
+  overflow: hidden;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.combo-table thead {
+  background: #172a46;
+}
+
+.combo-table th {
+  padding: 20px 15px;
+
+  color: #ffffff;
+
+  border-right: 1px solid rgba(255,255,255,0.1);
+
+  text-align: center;
+}
+
+.combo-feature-heading {
+  width: 27%;
+
+  color: #ffffff !important;
+
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.combo-feature-heading span {
+  color: #38bdf8;
+}
+
+.combo-plan-name {
+  margin-bottom: 12px;
+
+  color: #7dd3fc;
+
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.combo-plan-price {
+  color: #38bdf8;
+
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.combo-plan-tax {
+  margin-top: 3px;
+
+  color: #cbd5e1;
+
+  font-size: 13px;
+}
+
+/* =========================
+   TABLE BODY
+========================= */
+
+.combo-table td {
+  padding: 15px 12px;
+
+  color: #172a46;
+
+  border-bottom: 1px solid #ffffff;
+
+  text-align: center;
+
+  font-size: 15px;
+
+  line-height: 1.5;
+}
+
+/* Feature column */
+
+.combo-feature-name {
+  background: #dff4fc;
+
+  color: #172a46 !important;
+
+  font-size: 15px !important;
+
+  font-weight: 600;
+
+  text-align: left !important;
+}
+
+/* Alternate rows */
+
+.combo-table tbody tr:nth-child(odd) td:not(.combo-feature-name) {
+  background: #eefaff;
+}
+
+.combo-table tbody tr:nth-child(even) td:not(.combo-feature-name) {
+  background: #dff4fc;
+}
+
+/* =========================
+   MAPPING KEYWORDS
+========================= */
+
+.combo-highlight-row td {
+  font-weight: 700;
+}
+
+.combo-highlight-row td:not(.combo-feature-name) {
+  color: #0ea5e9;
+}
+
+/* =========================
+   FINAL PRICE
+========================= */
+
+.combo-final-price-row td {
+  padding: 25px 15px;
+
+  background: #c7eef9 !important;
+
+  border-bottom: none;
+}
+
+.combo-final-price-row strong {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #172a46;
+
+  font-size: 21px;
+}
+
+.combo-final-price-row del {
+  display: block;
+
+  color: #64748b;
+
+  font-size: 15px;
+}
+
+/* =========================
+   HOVER
+========================= */
+
+.combo-table tbody tr:not(.combo-final-price-row):hover td {
+  background: #c7eef9 !important;
+
+  transition: 0.2s ease;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+  .combo-hero {
+    padding: 80px 20px;
+  }
+
+  .combo-hero h1 {
+    font-size: 40px;
+  }
+
+  .combo-pricing-section {
+    padding: 50px 20px 80px;
+  }
+
+  .combo-table {
+    min-width: 900px;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .combo-hero h1 {
+    font-size: 34px;
+  }
+
+  .combo-hero p {
+    font-size: 15px;
+  }
+
+}

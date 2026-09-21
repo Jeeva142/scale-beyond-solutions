@@ -1,5 +1,5 @@
 import "./Team.css";
-
+import Reveal from "../../components/Reveal/Reveal";
 const Team = () => {
   const teamMembers = [
     {
@@ -30,6 +30,7 @@ const Team = () => {
   ];
 
   return (
+    <Reveal>
     <div className="team-page">
 
       {/* Hero Section */}
@@ -88,6 +89,7 @@ const Team = () => {
       </section>
 
     </div>
+    </Reveal>
   );
 };
 

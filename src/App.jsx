@@ -12,6 +12,7 @@ import Team from "./pages/Team/Team";
 import Career from "./pages/Career/Career";
 import Contact from "./pages/Contact/Contact";
 import DynamicWebsite from "./pages/Price/DynamicWebsite";
+import ComboPack from "./pages/Price/ComboPack";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
   path="/price/dynamic-website"
   element={<DynamicWebsite />}
 />
+<Route path="/price/combo-pack" element={<ComboPack />} />
         <Route path="/team" element={<Team />} />
         <Route path="/career" element={<Career />} />
         <Route path="/contact" element={<Contact />} />
