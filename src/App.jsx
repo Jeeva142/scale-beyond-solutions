@@ -11,6 +11,7 @@ import Price from "./pages/Price/Price";
 import Team from "./pages/Team/Team";
 import Career from "./pages/Career/Career";
 import Contact from "./pages/Contact/Contact";
+import DynamicWebsite from "./pages/Price/DynamicWebsite";
 
 function App() {
   return (
@@ -26,6 +27,10 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/product" element={<Product />} />
         <Route path="/price" element={<Price />} />
+        <Route
+  path="/price/dynamic-website"
+  element={<DynamicWebsite />}
+/>
         <Route path="/team" element={<Team />} />
         <Route path="/career" element={<Career />} />
         <Route path="/contact" element={<Contact />} />
