@@ -405,64 +405,90 @@ function Home() {
       </Reveal>
 
 
-      {/* =========================================
-          9. TEAM
-      ========================================= */}
+     {/* =========================================
+    9. TEAM
+========================================= */}
 
-      <Reveal direction="left">
-        <section className="home-team">
+<Reveal direction="left">
+  <section className="home-team">
 
-          <div className="team-container">
+    <div className="team-container">
 
-            <div className="team-intro">
+      <div className="team-intro">
 
-              <span className="home-section-label">
-                OUR TEAM
-              </span>
+        <span className="home-section-label">
+          OUR TEAM
+        </span>
 
-              <h2>
-                Meet The People
-                <br />
-                Behind The Growth
-              </h2>
+        <h2>
+          Meet The People
+          <br />
+          Behind The Growth
+        </h2>
 
-              <p>
-                A team of creative thinkers, technology experts
-                and marketing professionals working together
-                to create better results.
-              </p>
+        <p>
+          A team of creative thinkers, technology experts
+          and marketing professionals working together
+          to create better results.
+        </p>
 
-              <Link
-                to="/team"
-                className="home-primary-btn"
-              >
-                Meet Our Team
-                <span>→</span>
-              </Link>
+        <Link
+          to="/team"
+          className="home-primary-btn"
+        >
+          Meet Our Team
+          <span>→</span>
+        </Link>
 
-            </div>
+      </div>
 
 
-            <div className="team-preview-grid">
+      <div className="team-preview-grid">
 
-              <div className="team-placeholder">
-                <span>TEAM</span>
-              </div>
+        {/* Sakthivel */}
+        <div className="team-preview-card">
 
-              <div className="team-placeholder team-offset">
-                <span>TEAM</span>
-              </div>
-
-              <div className="team-placeholder">
-                <span>TEAM</span>
-              </div>
-
-            </div>
-
+          <div className="team-preview-image">
+            <span>PHOTO</span>
           </div>
 
-        </section>
-      </Reveal>
+          <h3>Sakthivel., M.Tech</h3>
+          <p>Founder & CEO</p>
+
+        </div>
+
+
+        {/* Priyadharshini */}
+        <div className="team-preview-card team-offset">
+
+          <div className="team-preview-image">
+            <span>PHOTO</span>
+          </div>
+
+          <h3>Priyadharshini</h3>
+          <p>Chief Operating Officer</p>
+
+        </div>
+
+
+        {/* Pradeep Kumar */}
+        <div className="team-preview-card">
+
+          <div className="team-preview-image">
+            <span>PHOTO</span>
+          </div>
+
+          <h3>Pradeep Kumar</h3>
+          <p>Chief Financial Officer</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+</Reveal>
 
 
       {/* =========================================
