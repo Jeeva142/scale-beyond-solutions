@@ -73,7 +73,18 @@
 /* =========================================
    CONTACT INFORMATION
 ========================================= */
+.contact-preview-item > div:last-child p {
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
 
+.contact-preview-item > div:last-child p:last-child {
+  margin-bottom: 0;
+}
+
+.contact-preview-item > div:last-child strong {
+  color: #172a46;
+}
 .contact-preview-item {
   display: flex;
 

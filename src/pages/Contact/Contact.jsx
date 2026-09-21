@@ -61,20 +61,41 @@ function ContactSection() {
 
 
           {/* LOCATION */}
-          <div className="contact-preview-item">
+          {/* LOCATION */}
+<div className="contact-preview-item">
 
-            <div className="contact-preview-icon">
-              📍
-            </div>
+  <div className="contact-preview-icon">
+    📍
+  </div>
 
-            <div>
-              <span>VISIT US</span>
-              <p>
-                Coimbatore, Tamil Nadu, India
-              </p>
-            </div>
+  <div>
+    <span>VISIT US</span>
 
-          </div>
+    <p style={{paddingBottom:"10px"}}>
+      <strong style={{color:"blue"}}>Corporate Office:</strong>
+      <br />
+        <p style={{paddingLeft:"15px"}}>No 46, Opp to Gani Hotel, Hosur</p>
+    </p>
+<strong style={{color:"blue"}}>Branch Office:</strong>
+      <br />
+    <p style={{paddingLeft:"15px"}}>
+      
+      Old LIC Backside, Near Balaji Hospital, Palacode.
+    </p>
+
+    <p style={{paddingLeft:"15px"}}>
+      
+      Nethaji Byepass Road, Near Adhiyaman Palace, Dharmapuri.
+    </p>
+
+    <p style={{paddingLeft:"15px"}}>
+      
+      Salem Byepass Road, Near TCR Hospital, Krishnagiri.
+    </p>
+
+  </div>
+
+</div>
 
 
           {/* STATS */}
@@ -202,14 +223,7 @@ function ContactSection() {
 
       {/* FULL CONTACT PAGE LINK */}
 
-      <div className="contact-preview-button">
-
-        <Link to="/contact">
-          View Contact Page
-          <span>→</span>
-        </Link>
-
-      </div>
+      
 
     </section>
     </Reveal>

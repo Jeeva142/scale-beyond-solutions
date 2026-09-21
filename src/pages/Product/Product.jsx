@@ -57,7 +57,7 @@ function Products() {
       <div className="products-header">
 
         <h2>
-           <span style={{ fontSize: "15px" }}> Our Products</span>
+           <span style={{ fontSize: "15px" }}> OUR PRODUCTS</span>
         </h2>
 
       </div>

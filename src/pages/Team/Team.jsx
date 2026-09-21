@@ -50,19 +50,6 @@ const Team = () => {
       {/* Team Members */}
       <section className="team-section">
 
-        <div className="team-header">
-          <span>OUR PEOPLE</span>
-
-          <h2>
-            The People Behind <span>Our Success</span>
-          </h2>
-
-          <p>
-            Our team brings together leadership, creativity, technology,
-            and business expertise to deliver meaningful results.
-          </p>
-        </div>
-
         <div className="team-grid">
 
           {teamMembers.map((member, index) => (

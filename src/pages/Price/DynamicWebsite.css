@@ -1,0 +1,382 @@
+/* =========================================
+   DYNAMIC WEBSITE PAGE
+========================================= */
+
+.dynamic-page {
+  width: 100%;
+  min-height: 100vh;
+
+  background: #ffffff;
+
+  color: #172a46;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.dynamic-hero {
+  padding: 85px 20px 75px;
+
+  background:
+    linear-gradient(
+      rgba(23, 42, 70, 0.92),
+      rgba(14, 165, 233, 0.82)
+    );
+
+  text-align: center;
+}
+
+.dynamic-hero-content {
+  max-width: 850px;
+
+  margin: 0 auto;
+}
+
+.dynamic-label {
+  display: inline-block;
+
+  margin-bottom: 15px;
+
+  color: #dff4fc;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.dynamic-hero h1 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 52px;
+  font-weight: 700;
+
+  line-height: 1.2;
+}
+
+.dynamic-hero h1 span {
+  color: #7dd3fc;
+}
+
+.dynamic-hero p {
+  max-width: 650px;
+
+  margin: 20px auto 0;
+
+  color: #e5f7fc;
+
+  font-size: 16px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   PRICING SECTION
+========================================= */
+
+.dynamic-pricing-section {
+  padding: 70px 5% 100px;
+
+  background: #ffffff;
+}
+
+.dynamic-pricing-container {
+  max-width: 1450px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   TABLE WRAPPER
+========================================= */
+
+.dynamic-table-wrapper {
+  width: 100%;
+
+  overflow-x: auto;
+
+  border-radius: 10px;
+
+  box-shadow:
+    0 10px 35px rgba(14, 165, 233, 0.10);
+}
+
+
+/* =========================================
+   TABLE
+========================================= */
+
+.dynamic-table {
+  width: 100%;
+
+  min-width: 1000px;
+
+  border-collapse: collapse;
+
+  text-align: center;
+
+  font-size: 14px;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.dynamic-table thead th {
+  padding: 20px 15px;
+
+  background: #172a46;
+
+  color: #ffffff;
+
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.dynamic-table thead th:last-child {
+  border-right: none;
+}
+
+
+/* =========================================
+   FEATURE HEADER
+========================================= */
+
+.feature-heading {
+  width: 22%;
+
+  color: #ffffff !important;
+
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.feature-heading span {
+  color: #38bdf8;
+}
+
+
+/* =========================================
+   PLAN NAME
+========================================= */
+
+.plan-name {
+  margin-bottom: 12px;
+
+  color: #7dd3fc;
+
+  font-size: 25px;
+  font-weight: 500;
+}
+
+
+/* =========================================
+   PLAN PRICE
+========================================= */
+
+.plan-price {
+  color: #38bdf8;
+
+  font-size: 27px;
+  font-weight: 600;
+}
+
+.plan-tax {
+  margin-top: 3px;
+
+  color: #ffffff;
+
+  font-size: 14px;
+}
+
+
+/* =========================================
+   TABLE BODY
+========================================= */
+
+.dynamic-table tbody tr:nth-child(odd) {
+  background: #dff4fc;
+}
+
+.dynamic-table tbody tr:nth-child(even) {
+  background: #eefaff;
+}
+
+
+/* =========================================
+   CELLS
+========================================= */
+
+.dynamic-table td {
+  padding: 12px 15px;
+
+  border-right: 1px solid rgba(14, 165, 233, 0.08);
+
+  color: #172a46;
+}
+
+.dynamic-table td:last-child {
+  border-right: none;
+}
+
+
+/* =========================================
+   FEATURE NAME
+========================================= */
+
+.feature-name {
+  font-weight: 500;
+
+  color: #23415f !important;
+}
+
+
+/* =========================================
+   CHECK ICON
+========================================= */
+
+.feature-check {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 23px;
+  height: 23px;
+
+  border: 3px solid #0ea5e9;
+
+  border-radius: 50%;
+
+  color: #0ea5e9;
+
+  font-size: 14px;
+  font-weight: 800;
+}
+
+
+/* =========================================
+   CROSS ICON
+========================================= */
+
+.feature-cross {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 23px;
+  height: 23px;
+
+  border: 3px solid #64748b;
+
+  border-radius: 50%;
+
+  color: #64748b;
+
+  font-size: 17px;
+  font-weight: 800;
+}
+
+
+/* =========================================
+   NORMAL TEXT
+========================================= */
+
+.feature-text {
+  color: #172a46;
+
+  font-size: 16px;
+}
+
+
+/* =========================================
+   FINAL PRICE
+========================================= */
+
+.final-price-row td {
+  padding: 20px 15px;
+
+  background: #c7eef9 !important;
+}
+
+.final-price-row strong {
+  display: block;
+
+  color: #172a46;
+
+  font-size: 20px;
+}
+
+.final-price-row del {
+  display: block;
+
+  margin-top: 4px;
+
+  color: #64748b;
+
+  font-size: 15px;
+}
+
+
+/* =========================================
+   HOVER
+========================================= */
+
+.dynamic-table tbody tr:not(.final-price-row):hover td {
+  background: #c7eef9;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .dynamic-hero {
+    padding: 70px 20px 60px;
+  }
+
+  .dynamic-hero h1 {
+    font-size: 42px;
+  }
+
+  .dynamic-pricing-section {
+    padding: 50px 20px 80px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .dynamic-hero {
+    padding: 60px 20px 50px;
+  }
+
+  .dynamic-hero h1 {
+    font-size: 36px;
+  }
+
+  .dynamic-hero p {
+    font-size: 14px;
+  }
+
+  .dynamic-pricing-section {
+    padding: 40px 15px 60px;
+  }
+
+  .dynamic-table {
+    min-width: 950px;
+  }
+}

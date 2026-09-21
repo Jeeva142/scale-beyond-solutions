@@ -405,7 +405,11 @@ function Home() {
       </Reveal>
 
 
-     {/* =========================================
+      {/* =========================================
+          9. TEAM
+      ========================================= */}
+
+      {/* =========================================
     9. TEAM
 ========================================= */}
 
@@ -445,41 +449,56 @@ function Home() {
 
       <div className="team-preview-grid">
 
-        {/* Sakthivel */}
+        {/* =========================
+            SAKTHIVEL
+        ========================= */}
+
         <div className="team-preview-card">
 
           <div className="team-preview-image">
-            <span>PHOTO</span>
+            <span>TEAM</span>
           </div>
 
-          <h3>Sakthivel., M.Tech</h3>
-          <p>Founder & CEO</p>
+          <div className="team-preview-info">
+            <h3>Sakthivel., M.Tech</h3>
+            <p>Founder & CEO</p>
+          </div>
 
         </div>
 
 
-        {/* Priyadharshini */}
+        {/* =========================
+            PRIYADHARSHINI
+        ========================= */}
+
         <div className="team-preview-card team-offset">
 
           <div className="team-preview-image">
-            <span>PHOTO</span>
+            <span>TEAM</span>
           </div>
 
-          <h3>Priyadharshini</h3>
-          <p>Chief Operating Officer</p>
+          <div className="team-preview-info">
+            <h3>Priyadharshini</h3>
+            <p>Chief Operating Officer</p>
+          </div>
 
         </div>
 
 
-        {/* Pradeep Kumar */}
+        {/* =========================
+            PRADEEP KUMAR
+        ========================= */}
+
         <div className="team-preview-card">
 
           <div className="team-preview-image">
-            <span>`${import.meta.env.BASE_URL}products/ai-assistant.png`</span>
+            <span>TEAM</span>
           </div>
 
-          <h3>Pradeep Kumar</h3>
-          <p>Chief Financial Officer</p>
+          <div className="team-preview-info">
+            <h3>Pradeep Kumar</h3>
+            <p>Chief Financial Officer</p>
+          </div>
 
         </div>
 
@@ -489,7 +508,6 @@ function Home() {
 
   </section>
 </Reveal>
-
 
       {/* =========================================
           10. CAREER

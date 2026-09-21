@@ -1295,92 +1295,216 @@
    9. TEAM
 ========================================= */
 
-.home-team {
-  padding: 105px 0;
+/* =========================================
+   HOME TEAM
+========================================= */
 
-  background: white;
+.home-team {
+  padding: 100px 5%;
+  background: #ffffff;
 }
 
 .team-container {
-  width: 87%;
-  max-width: 1300px;
-
-  margin: auto;
+  max-width: 1350px;
+  margin: 0 auto;
 
   display: grid;
-
-  grid-template-columns: 0.8fr 1.2fr;
-
-  gap: 70px;
-
+  grid-template-columns: 0.9fr 1.6fr;
   align-items: center;
+
+  gap: 80px;
+}
+
+
+/* =========================================
+   TEAM INTRO
+========================================= */
+
+.team-intro {
+  max-width: 550px;
+}
+
+.team-intro .home-section-label {
+  display: inline-block;
+
+  margin-bottom: 20px;
+
+  color: #0ea5e9;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
 }
 
 .team-intro h2 {
-  margin: 15px 0;
+  margin: 0 0 25px;
 
-  color: #17283f;
+  font-size: 48px;
+  line-height: 1.15;
 
-  font-size: 40px;
-
-  line-height: 1.2;
+  color: #172a46;
 }
 
 .team-intro p {
-  max-width: 470px;
+  max-width: 520px;
 
-  margin-bottom: 28px;
+  margin-bottom: 35px;
 
-  color: #627d98;
+  color: #718096;
 
-  font-size: 15px;
-
+  font-size: 16px;
   line-height: 1.8;
 }
+
+
+/* =========================================
+   TEAM PREVIEW GRID
+========================================= */
 
 .team-preview-grid {
   display: grid;
 
-  grid-template-columns:
-    repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 
-  gap: 15px;
+  gap: 18px;
 
-  align-items: end;
+  align-items: start;
 }
 
-.team-placeholder {
-  height: 330px;
+
+/* =========================================
+   TEAM CARD
+========================================= */
+
+.team-preview-card {
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  border: 1px solid #e3edf4;
+
+  box-shadow: 0 10px 30px rgba(14, 165, 233, 0.08);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.team-preview-card:hover {
+  transform: translateY(-10px);
+
+  box-shadow: 0 18px 40px rgba(14, 165, 233, 0.16);
+}
+
+
+/* =========================================
+   IMAGE / PHOTO AREA
+========================================= */
+
+.team-preview-image {
+  height: 410px;
 
   display: flex;
 
   align-items: flex-end;
   justify-content: center;
 
-  padding-bottom: 25px;
+  padding-bottom: 30px;
 
-  box-sizing: border-box;
+  background: #dff4fc;
 
-  border-radius: 18px;
+  color: #0ea5e9;
 
-  background:
-    linear-gradient(
-      145deg,
-      #e1f4fb,
-      #c1e8f7
-    );
-
-  color: #0ca7e8;
-
-  font-size: 12px;
-
+  font-size: 14px;
   font-weight: 700;
 
-  letter-spacing: 2px;
+  letter-spacing: 3px;
 }
 
-.team-offset {
-  height: 380px;
+.team-preview-card:nth-child(2) {
+  margin-top: -65px;
+}
+
+
+/* =========================================
+   TEAM INFORMATION
+========================================= */
+
+.team-preview-info {
+  padding: 20px 15px 24px;
+
+  text-align: center;
+}
+
+.team-preview-info h3 {
+  margin: 0 0 7px;
+
+  color: #172a46;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.team-preview-info p {
+  margin: 0;
+
+  color: #0ea5e9;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .team-container {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+  }
+
+  .team-intro {
+    max-width: 700px;
+  }
+
+  .team-preview-image {
+    height: 350px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+  .home-team {
+    padding: 70px 20px;
+  }
+
+  .team-intro h2 {
+    font-size: 36px;
+  }
+
+  .team-preview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-preview-card:nth-child(2) {
+    margin-top: 0;
+  }
+
+  .team-preview-image {
+    height: 330px;
+  }
 }
 
 
