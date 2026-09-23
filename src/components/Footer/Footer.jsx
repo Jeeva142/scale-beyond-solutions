@@ -1,5 +1,5 @@
 import "./Footer.css";
-
+import { NavLink } from "react-router-dom";
 function Footer() {
   return (
     <footer className="footer">
@@ -20,7 +20,7 @@ function Footer() {
         <div className="footer-column">
           <h3>Customer Service</h3>
 
-          <a href="/contact">Contact Us</a>
+          <NavLink to="/contact">Contact Us</NavLink>
           <a href="/about">About Us</a>
           <a href="/price">Pricing</a>
         </div>
